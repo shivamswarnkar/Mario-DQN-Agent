@@ -1,0 +1,7 @@
+usage: Playing Mario [-h] [--targetNet TARGETNET]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --targetNet TARGETNET
+                        Path to pretrained/checkpoint of target network file
+                        which will be used to play Mario.
