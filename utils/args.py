@@ -14,7 +14,7 @@ def get_train_args(base_args=False):
 
 	parser.add_argument('--batch_size', type=int, 
 		default=128, 
-		help='Batch Size for GAN training')
+		help='Batch Size for DQN training')
 
 	parser.add_argument('--gamma', type=float, 
 		default=0.009, 
@@ -69,6 +69,7 @@ def get_play_args(base_args=False):
 	parser = argparse.ArgumentParser('Playing Mario')
 
 	parser.add_argument('--targetNet', type=str, 
+		default=None,
 		help='Path to pretrained/checkpoint of target network file which will be used to play Mario.')
 
 	if base_args:
